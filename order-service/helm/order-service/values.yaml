@@ -1,0 +1,14 @@
+replicaCount: 3
+
+image:
+  repository: order-service
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  targetPort: 8080
+
+app:
+  name: order-service
